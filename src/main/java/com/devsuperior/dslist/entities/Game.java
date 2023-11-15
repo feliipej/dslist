@@ -2,6 +2,7 @@ package com.devsuperior.dslist.entities;
 
 import java.util.Objects;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,14 +22,21 @@ public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
-    private String titulo;
-    private Integer ano;
-    private String genero;
-    private String plataforma;
+
+    private String title;
+
+    @Column(name = "game_year")
+    private Integer year;
+    private String genre;
+    private String platforms;
+    private double score;
     private String imgUrl;
-    private String descricaoCurta;
-    private String descricaoLonga;
+
+    @Column(columnDefinition = "TEXT")
+    private String shortDescription;
+
+    @Column(columnDefinition = "TEXT")
+    private String longDescription;
 
     @Override
     public int hashCode() {
