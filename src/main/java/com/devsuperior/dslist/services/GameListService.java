@@ -21,4 +21,6 @@ public class GameListService {
         List<GameList> result = gameListRepository.findAll();
         return result.stream().map(x -> new GameListDTO(x)).toList();
     }
+
+
 }
