@@ -23,7 +23,8 @@ public class GameListController {
     @Autowired
     private GameService gameService;
 
-    public List<GameListDTO> findAll (){
+    @GetMapping
+    public List<GameListDTO> findAll() {
         List<GameListDTO> result = gameListService.findAll();
         return result;
     }
