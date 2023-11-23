@@ -17,3 +17,4 @@ O projeto utiliza tecnologias modernas e práticas de desenvolvimento, incluindo
 - **Banco H2:** Banco de dados relacional utilizado para desenvolvimento e testes.
 - **PostgreSQL:** Sistema de gerenciamento de banco de dados relacional, utilizado em ambientes de produção.
 - **Apache Tomcat:** Servidor web utilizado para executar aplicações Java Servlet e JSP.
+- **Docker:** Plataforma para desenvolvimento, envio e execução de aplicativos em contêineres.
